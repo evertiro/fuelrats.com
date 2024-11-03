@@ -97,6 +97,14 @@ const oauth = {
 
 
 
+const emails = {
+  update: 'emails/update',
+}
+
+
+
+
+
 const passwords = {
   reset: 'passwords/reset',
   requestReset: 'passwords/requestReset',
@@ -171,6 +179,7 @@ const actionTypes = {
   leaderboard,
   nicknames,
   oauth,
+  emails,
   passwords,
   rats,
   rescues,
