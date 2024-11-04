@@ -70,6 +70,9 @@ const users = {
   avatar: {
     update: 'users/avatar/update',
   },
+  email: {
+    update: 'users/email/update',
+  },
 }
 
 
@@ -91,14 +94,6 @@ const oauth = {
     create: 'oauth/authorize/create',
     delete: 'oauth/authorize/delete',
   },
-}
-
-
-
-
-
-const emails = {
-  update: 'emails/update',
 }
 
 
@@ -179,7 +174,6 @@ const actionTypes = {
   leaderboard,
   nicknames,
   oauth,
-  emails,
   passwords,
   rats,
   rescues,

@@ -19,19 +19,6 @@ const SESSION_TOKEN_LENGTH = 365 // days
 
 
 
-export const changeEmail = ({ id, ...data }) => {
-  return frApiPlainRequest(
-    actionTypes.emails.update,
-    {
-      url: `/users/${id}/email`,
-      method: 'patch',
-      data: createRequestBody('email-changes', data),
-    },
-  )
-}
-
-
-
 export const changePassword = ({ id, ...data }) => {
   return frApiPlainRequest(
     actionTypes.passwords.update,

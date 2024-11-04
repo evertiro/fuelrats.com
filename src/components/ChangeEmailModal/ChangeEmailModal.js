@@ -6,8 +6,8 @@ import { useDispatch, useSelector } from 'react-redux'
 import asModal, { ModalContent, ModalFooter } from '~/components/asModal'
 import EmailFieldset from '~/components/Fieldsets/EmailFieldset'
 import useForm from '~/hooks/useForm'
-import { changeEmail } from '~/store/actions/authentication'
 import { logout } from '~/store/actions/session'
+import { changeEmail } from '~/store/actions/user'
 import {
   selectCurrentUserId,
   selectUserById,
