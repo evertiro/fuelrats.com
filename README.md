@@ -2,7 +2,7 @@
 
 [![Fuelrats.com dependencies on David DM][daviddm-badge]][daviddm]
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-19-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-20-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 [![PRs Welcome][prs-badge]][prs]
 
@@ -58,6 +58,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
       <td align="center" valign="top" width="20%"><a href="https://github.com/Master-Guy"><img src="https://avatars3.githubusercontent.com/u/566429?v=4?s=80" width="80px;" alt="Master-Guy"/><br /><sub><b>Master-Guy</b></sub></a><br /><a href="https://github.com/FuelRats/fuelrats.com/commits?author=Master-Guy" title="Code">💻</a></td>
       <td align="center" valign="top" width="20%"><a href="https://github.com/Delota"><img src="https://avatars.githubusercontent.com/u/79107184?v=4?s=80" width="80px;" alt="Delota"/><br /><sub><b>Delota</b></sub></a><br /><a href="https://github.com/FuelRats/fuelrats.com/commits?author=Delota" title="Code">💻</a></td>
       <td align="center" valign="top" width="20%"><a href="http://dwest.dev"><img src="https://avatars.githubusercontent.com/u/39689166?v=4?s=80" width="80px;" alt="Darius West"/><br /><sub><b>Darius West</b></sub></a><br /><a href="https://github.com/FuelRats/fuelrats.com/commits?author=lFourl" title="Code">💻</a> <a href="#content-lFourl" title="Content">🖋</a></td>
+      <td align="center" valign="top" width="20%"><a href="https://evertiro.com"><img src="https://avatars.githubusercontent.com/u/36433?v=4?s=80" width="80px;" alt="Evertiro"/><br /><sub><b>Evertiro</b></sub></a><br /><a href="https://github.com/FuelRats/fuelrats.com/commits?author=evertiro" title="Code">💻</a> <a href="#content-evertiro" title="Content">🖋</a></td>
     </tr>
   </tbody>
 </table>
