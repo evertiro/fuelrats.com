@@ -218,6 +218,16 @@
         "code",
         "content"
       ]
+    },
+    {
+      "login": "evertiro",
+      "name": "Evertiro",
+      "avatar_url": "https://avatars.githubusercontent.com/u/36433?v=4",
+      "profile": "https://evertiro.com",
+      "contributions": [
+        "code",
+        "content"
+      ]
     }
   ],
   "repoType": "github",
