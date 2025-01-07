@@ -80,41 +80,55 @@
   .cmdrName {
     flex-grow: 1;
   }
+}
 
-  .expansionBadge {
+.platform {
+  .platformBadge {
     order: 1;
 
     color: $white;
 
-    padding: 0 0.5rem;
+    text-align: center;
 
-    margin-left: 0.8rem;
+    width: 100%;
 
-    &.horizons3 {
+    > .platformBadgeIcon {
+      background-color: $black-lightened;
+
+      display: inline-block;
+
+      width: 27px;
+
+      > svg {
+        height: 12px;
+      }
+    }
+
+    > .platformBadgeLabel {
+      display: inline-block;
+
+      width: calc( 100% - 27px );
+    }
+
+    &.horizons3 > .platformBadgeLabel {
       background-color: $magenta-dark3;
     }
 
-    &.horizons4 {
+    &.horizons4 > .platformBadgeLabel {
       background-color: $blue-dark3;
     }
 
-    &.odyssey {
+    &.odyssey > .platformBadgeLabel {
       background-color: $gold-dark2;
     }
-  }
-}
 
-.platform {
-  &.ps {
-    color: $playstation-blue-light3
-  }
+    &.ps > .platformBadgeLabel {
+      background-color: $xbox-green-light;
+    }
 
-  &.xb {
-    color: $xbox-green-light
-  }
-
-  &.pc {
-    color: $magenta-dark
+    &.xb > .platformBadgeLabel {
+      background-color: $playstation-blue-light3;
+    }
   }
 }
 
