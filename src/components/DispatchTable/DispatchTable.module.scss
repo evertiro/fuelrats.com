@@ -75,6 +75,7 @@
 
 .cmdrNameCol {
   display: flex;
+
   align-items: flex-start;
 
   .cmdrName {
@@ -86,29 +87,11 @@
   .platformBadge {
     order: 1;
 
+    width: 100%;
+
     color: $white;
 
     text-align: center;
-
-    width: 100%;
-
-    > .platformBadgeIcon {
-      background-color: $black-lightened;
-
-      display: inline-block;
-
-      width: 27px;
-
-      > svg {
-        height: 12px;
-      }
-    }
-
-    > .platformBadgeLabel {
-      display: inline-block;
-
-      width: calc( 100% - 27px );
-    }
 
     &.horizons3 > .platformBadgeLabel {
       background-color: $magenta-dark3;
@@ -128,6 +111,24 @@
 
     &.xb > .platformBadgeLabel {
       background-color: $playstation-blue-light3;
+    }
+
+    > .platformBadgeIcon {
+      display: inline-block;
+
+      width: 27px;
+
+      background-color: $black-lightened;
+
+      > svg {
+        height: 12px;
+      }
+    }
+
+    > .platformBadgeLabel {
+      display: inline-block;
+
+      width: calc(100% - 27px);
     }
   }
 }
