@@ -131,6 +131,16 @@ function RescueRow (props) {
           )
         }
         {
+          platform === 'pc' && !expansion && (
+            <span className={[styles.platformBadge, styles[platform]]}>
+              <span className={[styles.platformBadgeIcon]}>
+                <FontAwesomeIcon fixedWidth icon="tv" />
+              </span>
+              <span className={[styles.platformBadgeLabel]}>{'PC'}</span>
+            </span>
+          )
+        }
+        {
           platform !== 'pc' && (
             <span className={[styles.platformBadge, styles[platform]]}>
               <span className={[styles.platformBadgeIcon]}>

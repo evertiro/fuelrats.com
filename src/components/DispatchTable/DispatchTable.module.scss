@@ -93,6 +93,10 @@
 
     text-align: center;
 
+    > .platformBadgeLabel {
+      background-color: $red;
+    }
+
     &.horizons3 > .platformBadgeLabel {
       background-color: $magenta-dark3;
     }
