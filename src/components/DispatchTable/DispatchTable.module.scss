@@ -93,10 +93,6 @@
 
     text-align: center;
 
-    > .platformBadgeLabel {
-      background-color: $red;
-    }
-
     &.horizons3 > .platformBadgeLabel {
       background-color: $magenta-dark3;
     }
@@ -133,6 +129,8 @@
       display: inline-block;
 
       width: calc(100% - 27px);
+
+      background-color: $red;
     }
   }
 }
