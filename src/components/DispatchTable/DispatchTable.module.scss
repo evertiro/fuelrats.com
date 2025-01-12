@@ -5,7 +5,6 @@
   --table-border-color: #3C3C3C;
 }
 
-
 .table {
   min-width: 100%;
   margin-bottom: 0.5rem;
@@ -15,53 +14,53 @@
   background-color: $black;
   border-spacing: 0;
   border-collapse: collapse;
+}
 
-  thead {
-    background-color: $black-darkened;
+.table thead {
+  background-color: $black-darkened;
+}
 
-    > tr > th {
-      padding: 4px 8px;
+.table th {
+  padding: 4px 8px;
 
-      border: 1px solid var(--table-border-color);
-      border-top: 0;
-      border-bottom-width: 2px;
+  border: 1px solid var(--table-border-color);
+  border-top: 0;
+  border-bottom-width: 2px;
 
-      text-align: left;
-      vertical-align: bottom;
-    }
-  }
+  text-align: left;
+  vertical-align: bottom;
+}
 
-  tbody > tr > td {
-    max-width: 300px;
-    padding: 0.8rem;
+.table td {
+  max-width: 300px;
+  padding: 0.8rem;
 
-    border: 1px solid var(--table-border-color);
+  border: 1px solid var(--table-border-color);
 
-    line-height: 27px;
+  line-height: 27px;
 
-    vertical-align: middle;
+  vertical-align: middle;
+}
 
-    &.rescueRowFocus {
-      height: 4rem;
-      padding: 0.4rem;
+.rescueRowFocus {
+  height: 4rem;
+  padding: 0.4rem;
+}
 
-      :global(.button) {
-        display: inline-flex;
+.rescueRowFocus :global(.button) {
+  display: inline-flex;
 
-        align-items: center;
+  align-items: center;
 
-        justify-content: center;
+  justify-content: center;
 
-        width: 100%;
-        height: 100%;
+  width: 100%;
+  height: 100%;
+}
 
-        svg {
-          align-items: baseline;
-          vertical-align: middle;
-        }
-      }
-    }
-  }
+.rescueRowFocus :global(.button) svg {
+  align-items: baseline;
+  vertical-align: middle;
 }
 
 .codeRed {
@@ -77,62 +76,60 @@
   display: flex;
 
   align-items: flex-start;
-
-  .cmdrName {
-    flex-grow: 1;
-  }
 }
 
-.platform {
-  .platformBadge {
-    order: 1;
+.cmdrName {
+  flex-grow: 1;
+}
 
-    width: 100%;
+.platformBadge {
+  order: 1;
 
-    color: $white;
+  width: 100%;
 
-    text-align: center;
+  color: $white;
 
-    &.horizons3 > .platformBadgeLabel {
-      background-color: $magenta-dark3;
-    }
+  text-align: center;
+}
 
-    &.horizons4 > .platformBadgeLabel {
-      background-color: $blue-dark3;
-    }
+.horizons3 > .platformBadgeLabel {
+  background-color: $magenta-dark3;
+}
 
-    &.odyssey > .platformBadgeLabel {
-      background-color: $gold-dark2;
-    }
+.horizons4 > .platformBadgeLabel {
+  background-color: $blue-dark3;
+}
 
-    &.ps > .platformBadgeLabel {
-      background-color: $xbox-green-light;
-    }
+.odyssey > .platformBadgeLabel {
+  background-color: $gold-dark2;
+}
 
-    &.xb > .platformBadgeLabel {
-      background-color: $playstation-blue-light3;
-    }
+.ps > .platformBadgeLabel {
+  background-color: $xbox-green-light;
+}
 
-    > .platformBadgeIcon {
-      display: inline-block;
+.xb > .platformBadgeLabel {
+  background-color: $playstation-blue-light3;
+}
 
-      width: 27px;
+.platformBadgeIcon {
+  display: inline-block;
 
-      background-color: $black-lightened;
+  width: 27px;
 
-      > svg {
-        height: 12px;
-      }
-    }
+  background-color: $black-lightened;
+}
 
-    > .platformBadgeLabel {
-      display: inline-block;
+.platformBadgeIcon > svg {
+  height: 12px;
+}
 
-      width: calc(100% - 27px);
+.platformBadgeLabel {
+  display: inline-block;
 
-      background-color: $red;
-    }
-  }
+  width: calc(100% - 27px);
+
+  background-color: $red;
 }
 
 .queueLength {
