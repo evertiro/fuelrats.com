@@ -93,26 +93,6 @@
 
     text-align: center;
 
-    &.horizons3 > .platformBadgeLabel {
-      background-color: $magenta-dark3;
-    }
-
-    &.horizons4 > .platformBadgeLabel {
-      background-color: $blue-dark3;
-    }
-
-    &.odyssey > .platformBadgeLabel {
-      background-color: $gold-dark2;
-    }
-
-    &.ps > .platformBadgeLabel {
-      background-color: $xbox-green-light;
-    }
-
-    &.xb > .platformBadgeLabel {
-      background-color: $playstation-blue-light3;
-    }
-
     > .platformBadgeIcon {
       display: inline-block;
 
@@ -131,6 +111,26 @@
       width: calc(100% - 27px);
 
       background-color: $red;
+
+      &.horizons3 {
+        background-color: $magenta-dark3;
+      }
+
+      &.horizons4 {
+        background-color: $blue-dark3;
+      }
+
+      &.odyssey {
+        background-color: $gold-dark2;
+      }
+
+      &.ps {
+        background-color: $xbox-green-light;
+      }
+
+      &.xb {
+        background-color: $playstation-blue-light3;
+      }
     }
   }
 }

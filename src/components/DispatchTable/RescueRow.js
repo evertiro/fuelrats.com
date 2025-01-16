@@ -120,11 +120,11 @@ function RescueRow (props) {
         title={rescuePlatform.long}>
         {
           platform === 'pc' && expansion && (
-            <span className={[styles.platformBadge, styles[platform], styles[expansion]]}>
+            <span className={[styles.platformBadge]}>
               <span className={[styles.platformBadgeIcon]}>
                 <FontAwesomeIcon fixedWidth icon="tv" />
               </span>
-              <span className={[styles.platformBadgeLabel]}>
+              <span className={[styles.platformBadgeLabel, styles[platform], styles[expansion]]}>
                 {expansionNameMap[expansion]}
               </span>
             </span>
@@ -132,17 +132,17 @@ function RescueRow (props) {
         }
         {
           platform === 'pc' && !expansion && (
-            <span className={[styles.platformBadge, styles[platform]]}>
+            <span className={[styles.platformBadge]}>
               <span className={[styles.platformBadgeIcon]}>
                 <FontAwesomeIcon fixedWidth icon="tv" />
               </span>
-              <span className={[styles.platformBadgeLabel]}>{'PC'}</span>
+              <span className={[styles.platformBadgeLabel, styles[platform]]}>{'PC'}</span>
             </span>
           )
         }
         {
           platform !== 'pc' && (
-            <span className={[styles.platformBadge, styles[platform]]}>
+            <span className={[styles.platformBadge]}>
               <span className={[styles.platformBadgeIcon]}>
                 {
                   platform === 'ps' && (
@@ -155,7 +155,7 @@ function RescueRow (props) {
                   )
                 }
               </span>
-              <span className={[styles.platformBadgeLabel]}>
+              <span className={[styles.platformBadgeLabel, styles[platform]]}>
                 {rescuePlatform.short}
               </span>
             </span>
