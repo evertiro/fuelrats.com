@@ -89,6 +89,9 @@ function UserMenu () {
               <NavLink href="/profile/rats">
                 {'My Rats'}
               </NavLink>
+              <NavLink href="/profile/rescues">
+                {'My Rescues'}
+              </NavLink>
             </NavSection>
 
             <NavSection className={styles.navSection} title="Admin">

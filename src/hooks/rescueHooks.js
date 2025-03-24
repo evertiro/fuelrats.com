@@ -1,10 +1,13 @@
 import { HttpStatus } from '@fuelrats/web-util/http'
 import axios from 'axios'
 import { useMemo, useState, useEffect } from 'react'
+import { useDispatch } from 'react-redux'
 
 import { getLanguage } from '~/data/languageList'
 import { getPlatform } from '~/data/platformList'
+import { getUserRescues } from '~/store/actions/statistics'
 import formatAsEliteDateTime from '~/util/date/formatAsEliteDateTime'
+import getResponseError from '~/util/getResponseError'
 
 
 const pollTimeoutTime = 10000
@@ -82,4 +85,28 @@ export const useRescueQueueCount = () => {
 
 
   return [queueLength, maxClients]
+}
+
+export const useUserRescues = () => {
+  const [userRescues, setUserRescues] = useState([])
+  const dispatch = useDispatch()
+
+  useEffect(
+    () => {
+      const fetchData = async () => {
+        const response = await dispatch(getUserRescues())
+
+        const error = getResponseError(response)
+
+        if (!error) {
+          setUserRescues(response.payload.data)
+        }
+      }
+
+      fetchData()
+    },
+    [dispatch],
+  )
+
+  return userRescues
 }

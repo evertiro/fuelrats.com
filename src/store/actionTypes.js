@@ -73,6 +73,9 @@ const users = {
   email: {
     update: 'users/email/update',
   },
+  rescues: {
+    read: 'users/rescues/read',
+  },
 }
 
 

@@ -25,3 +25,13 @@ export const getUserStatistics = (userId) => {
 
   )
 }
+
+
+export const getUserRescues = () => {
+  return frApiRequest(
+    actionTypes.users.rescues.read,
+    {
+      url: '/rescues/me',
+    },
+  )
+}

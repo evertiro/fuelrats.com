@@ -1,0 +1,13 @@
+@import '../../scss/colors';
+
+.userRescues td {
+  min-height: 6rem;
+  padding: 0.5rem 0.8rem;
+
+  overflow: visible;
+}
+
+.userRescues li {
+  list-style-type: none;
+  text-align: right;
+}
